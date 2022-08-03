@@ -1,0 +1,303 @@
+/*  Reset start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { 
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Reset end */
+
+/* Default classes start */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-around;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+/* Default classes end */
+
+/* header */
+.title-img{
+    display: flex;
+    background-color: rgb(10,14,23);
+}
+
+.header {
+    width: 200px;
+    height: 100%;
+}
+
+/* text-title start */
+.text-title-block {
+    background: url("/img/pexels-dominykas.jpg") rgba(255, 255, 255, 0.337);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-title-one, .text-title-two, .text-title-three {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 3px 3px rgb(10,14,23);
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.text-title-one, .text-title-two {
+    justify-content: space-around;
+}
+
+.text-title-one, .span-word {
+    text-transform: capitalize;
+}
+
+.uppercase-title-word, .uppercase-word{
+    font-variant: small-caps;
+    padding-bottom: 10px;
+}
+
+.span-word {
+    font-family:'Times New Roman', Times, serif;
+    display: block;
+    font-size: 30px;
+}
+
+.list-word {
+    padding-bottom: 15px;
+}
+
+.word {
+    color:rgb(182, 3, 3);
+}
+
+.style-ul {
+    margin-right: 30px ;
+}
+
+.style-li { 
+    background-image: url(/img/check-copy.png);
+    background-size: 25px 30px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    list-style-type: none;
+}
+
+.list-word {
+    text-align: start;
+}
+
+/* text-title end */
+
+/* title-forms  */
+
+#title-forms {
+    justify-content: center;
+    background-color: rgb(234, 168, 47);
+    text-align: center;
+}
+
+input[type=text] {
+    margin: 5px 5px;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.forms-frst-block, .forms-scnd-block, .forms-third-block  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.forms-frst-name, .forms-phone-numbers, .forms-company-email, .company-name, .forms-lst-name, .forms-numb-employees, .forms-job-level, .forms-country, .forms-department {
+    padding: 5px 5px 0px 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(10,14,23);
+    font-size: 20px;
+    font-weight: 10;
+    font-variant: small-caps;
+    height: 71.4px;
+    width: 196.4px;
+    text-shadow: 1px 1px 1px rgb(182, 3, 3);
+}
+
+#department, #country, #job-level, #numb-of-employees {
+    display: block;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    width: 176.4px;
+    border: none;
+    border-radius: 4px;
+    flex-grow: 10;
+}
+
+.forms-button-block {
+    flex-direction: row;
+    width: 1000px;
+    padding: 15px;
+}
+
+.button {
+    border: none;
+    color: rgb(255,255,255);
+    background-color: rgb(10,14,23);
+    padding: 5px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    text-shadow: 1px 1px 1px rgb(182, 3, 3);
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(182, 3, 3);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#customers-applouse-block {
+    justify-content: center;
+    background-color: white;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+.custom-paragraph, .title-user {
+    text-align: center;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 2000px;
+    font-size: 12px;
+    font-variant: small-caps;
+}
+
+.custom-link {
+    width: 80px;
+    padding: 0px 5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.customers-block-billguard {
+    height: 55px;
+    width: 55px;
+    padding: 0px;
+}
+
+.customers-block-usa-today {
+    height: 70px;
+    width: 110px;
+    padding-top: 10px;
+}
+
+/* #user-applouse-tweet */
+
+#user-applouse-tweet {
+    background: url("/img/wallpaperbetter.com_1920x1080.jpg") rgba(255, 255, 255, 0.337);
+    padding: 10px 10px;
+}
+
+.user-block {
+    justify-content: center;
+    margin: 10px 20px;
+}
+
+.user-tweet-first, .user-tweet-scnd, .user-tweet-thrd {
+    background-color: white;
+    flex-direction: column;
+    padding: 5px 5px;
+    margin-right: 10px;
+    box-shadow: 10px 5px 10px black;
+    border: 3px solid black;
+    max-height: 200px;
+}
+
+
+.title-user {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.user-nickname {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 65, 181);
+    font-size: small;
+    padding: 5px 0;
+}
+
+.img-tweet {
+    background-color: white;
+    height: 40%;
+    max-width: 70px;
+}
+
+.user-content-first, .user-content-two, .user-content-thrd {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    overflow: auto;
+}
+
+.tweet-span-word {
+    color: black;
+}
+
+.header-container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 10 15px;
+}
+
+#header-contacts {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(10, 14, 23);
+    color: white;
+}
+
+.header-nav {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.header-nav a + a {
+    margin-left: 30px;
+    padding: 10px 10px;
+}
+
+.header-nav a:hover {
+    color: red;
+}
+
+.header-paragrapgh {
+    width: 1170px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
