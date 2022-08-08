@@ -1,8 +1,9 @@
 /*  Reset start */
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    max-width: 90%;
 }
 
 a { 
@@ -31,14 +32,15 @@ a {
 /* Default classes end */
 
 /* header */
-.title-img{
+.title-img {
     display: flex;
-    background-color: rgb(10,14,23);
+    background-color: rgb(10,14,23);          
 }
 
 .header {
-    width: 200px;
-    height: 100%;
+    margin-left: 1%;
+    max-width: 200px;
+    padding: 5px;
 }
 
 /* text-title start */
@@ -49,34 +51,61 @@ a {
 }
 
 .text-title-one, .text-title-two, .text-title-three {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Candal', sans-serif;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 3px 3px rgb(10,14,23);
-    padding: 10px 10px;
-    text-align: center;
+    text-shadow: 1px 1px 1px rgb(10,14,23);
 }
 
 .text-title-one, .text-title-two {
-    justify-content: space-around;
+    padding-bottom: 5px;
 }
 
 .text-title-one, .span-word {
     text-transform: capitalize;
 }
 
-.uppercase-title-word, .uppercase-word{
-    font-variant: small-caps;
-    padding-bottom: 10px;
+.text-title-one {
+    font-size: 50px;
+    flex: 1;
+    margin-left: 200px;
+    padding-right: 5px;
+}
+
+.text-title-two {
+    flex: 2;
+    padding-left: 10px;
+    text-align: flex-start;
+}
+
+.text-title-three {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.uppercase-title-word, .uppercase-word {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.uppercase-word {
+    margin: 10px 0px 5px 50px;
+    padding: 5px 0 5px 20px;
+}
+
+.uppercase-title-word {
+    width: 750px;
+    padding-bottom: 5px;
 }
 
 .span-word {
-    font-family:'Times New Roman', Times, serif;
     display: block;
-    font-size: 30px;
+    font-size: 14px;
+    margin: 0;
+    font-weight: 500;
 }
 
 .list-word {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 .word {
@@ -84,71 +113,63 @@ a {
 }
 
 .style-ul {
-    margin-right: 30px ;
+    margin-left: 35px ;
+    font-size: 10px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .style-li { 
     background-image: url(/img/check-copy.png);
-    background-size: 25px 30px;
+    background-size: 20px 20px;
     background-repeat: no-repeat;
-    padding-left: 25px;
     list-style-type: none;
 }
-
-.list-word {
-    text-align: start;
-}
-
 /* text-title end */
 
 /* title-forms  */
 
 #title-forms {
-    justify-content: center;
     background-color: rgb(234, 168, 47);
-    text-align: center;
-}
-
-input[type=text] {
-    margin: 5px 5px;
-    padding: 5px 5px;
-    border: none;
-    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
 }
 
 .forms-frst-block, .forms-scnd-block, .forms-third-block  {
-    display: flex;
+    padding: 5px 5px;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+}
+
+.forms-frst-block, .forms-scnd-block {
+    margin-right: 0;
+}
+
+.forms-scnd-block, .forms-third-block {
+    margin-left: 0;
 }
 
 .forms-frst-name, .forms-phone-numbers, .forms-company-email, .company-name, .forms-lst-name, .forms-numb-employees, .forms-job-level, .forms-country, .forms-department {
-    padding: 5px 5px 0px 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(10,14,23);
-    font-size: 20px;
-    font-weight: 10;
-    font-variant: small-caps;
-    height: 71.4px;
-    width: 196.4px;
-    text-shadow: 1px 1px 1px rgb(182, 3, 3);
+    font-weight: 600;
+    font-size: 12px;
+    padding-top: 10px;
+    width: 150px;
 }
 
-#department, #country, #job-level, #numb-of-employees {
+#department, #country, #job-level, #numb-of-employees, #last-name, #comp-name , #frst-name, #phone-numb, #company-email {
     display: block;
-    margin: 5px 5px;
     padding: 5px 5px;
-    width: 176.4px;
+    width: 200px;
     border: none;
     border-radius: 4px;
-    flex-grow: 10;
 }
 
 .forms-button-block {
     flex-direction: row;
-    width: 1000px;
-    padding: 15px;
+    padding: 5px;
+    text-align: center;
+    width: 50%;
+    margin-top: 15px;
 }
 
 .button {
@@ -158,8 +179,7 @@ input[type=text] {
     padding: 5px 30px;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 4px;
-    text-shadow: 1px 1px 1px rgb(182, 3, 3);
-    font-variant: small-caps;
+    text-transform: uppercase;
     letter-spacing: 3px;
     cursor: pointer;
 }

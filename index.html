@@ -11,7 +11,7 @@
     <div class="title-img">
         <div class="header">
             <a href="#">
-                <img src="/img/Applause-copy.jpg" alt="Applause-copy">
+                <img class="logo-header" src="/img/Applause-copy.jpg" alt="Applause-copy">
             </a>
         </div>
     </div>
@@ -41,45 +41,47 @@
 
     <!-- /.forms-block -->
     <div id="title-forms" class="d-flex wrap">
-        <div class="forms-frst-block"> 
+        <div class="forms-frst-block d-flex"> 
             <div class="forms-frst-name">
-                <label for="first-name">First name<br></label>
-                <input type="text" name="first-name" id="first-name">
+                <label class="label" for="first-name">First name</label>
+                <input type="text" name="first-name" id="frst-name">
             </div>
             <!-- /.forms-frst-name -->
+
             <div class="forms-phone-numbers">
-                <label for="phone-numb">Phone number<br></label>
+                <label class="label" for="phone-numb">Phone number</label>
                 <input type="text" name="phone-numb" id="phone-numb">
             </div>
             <!-- /.forms-phone-numbers -->
+
             <div class="forms-company-email">
-                <label for="company-email">Company email<br></label>
+                <label class="label" for="company-email">Company email</label>
                 <input type="text" name="company-email" id="company-email">
             </div>
             <!-- /.forms-company-email -->
         </div>
         <!-- /.forms-frst-block -->
 
-        <div class="forms-scnd-block">
+        <div class="forms-scnd-block d-flex">
             <div class="forms-numb-employees">
-                <form action="numb-of-employees">
-                    <p># of Employees</p>
-                      <select name="numb-of-employees" id="numb-of-employees" class="numb-of-employees">
-                       <option value="one">1</option>
-                        <option value="two">2</option>
-                       <option value="three">3</option>
-                      </select>
-                </form>
+                <label class="label" for="numb-of-employees"># of Employees</label>
+                        <form action="numb-of-employees">
+                            <select name="numb-of-employees" id="numb-of-employees" class="numb-of-employees">
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>      
+                            </select>
+                        </form>
             </div>
             <!-- /.forms-numb-employees -->
             <div class="forms-lst-name">
-                <label for="last-name">Last name</label>
+                <label class="label" for="last-name">Last name</label>
                 <input type="text" name="last-name" id="last-name">
             </div>
             <!-- /.forms-lst-name -->  
             <div class="forms-department">
+                <label class="label" for="department">Department</label>
                 <form action="department">
-                    <p>Department</p>
                     <select name="department" id="department" class="department">
                         <option value="high">High</option>
                         <option value="medium">Medium</option>
@@ -91,33 +93,33 @@
         </div>
         <!-- /.forms-scnd-block  -->
                 
-        <div class="forms-third-block">
+        <div class="forms-third-block d-flex">
             <div class="company-name">
-                <label for="comp-name">Company name</label>
+                <label class="label" for="comp-name">Company name</label>
                 <input type="text" name="comp-name" id="comp-name">
             </div>
             <!-- /.company-name -->
 
             <div class="forms-job-level">
+                <label class="label" for="job-level">Job Title Level</label>
                 <form action="job-level">
-                    <p>Job Title Level</p>
-                        <select name="job-level" id="job-level" class="job-level">
-                            <option value="one">1</option>
-                            <option value="two">2</option>
-                            <option value="three">3</option>
-                        </select>
+                    <select name="job-level" id="job-level" class="job-level">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                    </select>
                 </form>
             </div>
             <!-- /.forms-job-level -->
         
             <div class="forms-country">
+                <label class="label" for="country">Country</label>
                 <form action="country" id="form-country">
-                    <p>Country</p>
-                        <select name="country" id="country" class="country">
-                            <option value="ua">Ukraine</option>
-                            <option value="usa">USA</option>
-                            <option value="pl">Poland</option>
-                        </select>
+                    <select name="country" id="country" class="country">
+                        <option value="ua">Ukraine</option>
+                        <option value="usa">USA</option>
+                        <option value="pl">Poland</option>
+                    </select>
                 </form>
             </div>
             <!-- /.forms-country -->
