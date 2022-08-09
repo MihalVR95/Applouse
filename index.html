@@ -17,24 +17,28 @@
     </div>
     <!-- /.header -->
 
-    <div class="text-title-block d-flex justify-content-between wrap">
-         <h1 class="text-title-one">Crowdsourced usability testing</h1>
+    <div id="text-title-block" class="d-flex wrap">
+        <div class="text-title-one-two d-flex wrap">  
+            <div class="text-title-one">
+                <h1>Crowdsourced<br> usability<br> testing</h1>
+            </div>
+            <!-- /.text-title-one -->
+
             <div class="text-title-two">
                 <h2 class="uppercase-word">This <span class="word">free</span> whitepaper covers...</h2> 
-                    <ul class="style-ul">
-                        <li class="style-li"><p class="list-word"><span class="span-word"> thy user Choose the right</span> Terminology for a consumer application.</p>
-                        </li>
-                        <li class="style-li"><p class="list-word"><span class="span-word"> much is too much</span> Working with the right size focus group your testing.</p>
-                        </li>
-                        <li class="style-li"><p class="list-word"><span class="span-word"> Turning data into decisions</span> How to quikly target 'pain points' to improve usability.</p>
-                        </li>
-                    </ul> 
+                <ul class="style-ul">
+                    <li class="style-li"><p class="list-word"><span class="span-word"> Know thy user</span> Choose the right Terminology for a consumer application.</p>
+                    </li>
+                    <li class="style-li"><p class="list-word"><span class="span-word"> much is too much</span> Working with the right size focus group your testing.</p>
+                    </li>
+                    <li class="style-li"><p class="list-word"><span class="span-word"> Turning data into decisions</span> How to quikly target 'pain points' to improve usability.</p>
+                    </li>
+                </ul> 
             </div>
             <!-- /.text-title-two -->
-
-        <div class="text-title-three">
-            <h2 class="uppercase-title-word">Get the free whitepaper below. Don't worry,<span class="word"> we respect your privacy</span>.</h2>
         </div>
+
+            <h2 class="uppercase-title-word">Get the free whitepaper below. Don't worry,<span class="word"> we respect your privacy</span>.</h2>
         <!-- /.text-title-three -->
     </div>
     <!-- /.text-title-block -->
@@ -43,44 +47,46 @@
     <div id="title-forms" class="d-flex wrap">
         <div class="forms-frst-block d-flex"> 
             <div class="forms-frst-name">
-                <label class="label" for="first-name">First name</label>
-                <input type="text" name="first-name" id="frst-name">
+                <label for="frst-name">First name</label>
             </div>
             <!-- /.forms-frst-name -->
+                <input type="text" name="first-name" id="frst-name">
 
-            <div class="forms-phone-numbers">
-                <label class="label" for="phone-numb">Phone number</label>
-                <input type="text" name="phone-numb" id="phone-numb">
+            <div class="forms-phone-numbers padding-top">
+                <label for="phone-numb">Phone number</label>
             </div>
             <!-- /.forms-phone-numbers -->
+                <input type="text" name="phone-numb" id="phone-numb">
 
-            <div class="forms-company-email">
-                <label class="label" for="company-email">Company email</label>
-                <input type="text" name="company-email" id="company-email">
+            <div class="forms-company-email padding-top">
+                <label for="company-email">Company email</label>
             </div>
             <!-- /.forms-company-email -->
+                <input type="text" name="company-email" id="company-email">
         </div>
         <!-- /.forms-frst-block -->
 
         <div class="forms-scnd-block d-flex">
             <div class="forms-numb-employees">
                 <label class="label" for="numb-of-employees"># of Employees</label>
-                        <form action="numb-of-employees">
-                            <select name="numb-of-employees" id="numb-of-employees" class="numb-of-employees">
-                                <option value="one">1</option>
-                                <option value="two">2</option>
-                                <option value="three">3</option>      
-                            </select>
-                        </form>
             </div>
             <!-- /.forms-numb-employees -->
-            <div class="forms-lst-name">
-                <label class="label" for="last-name">Last name</label>
-                <input type="text" name="last-name" id="last-name">
+                <form action="numb-of-employees padding-top">
+                    <select name="numb-of-employees" id="numb-of-employees">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>      
+                     </select>
+                </form>
+            <div class="forms-lst-name padding-top">
+                <label for="last-name">Last name</label>
             </div>
             <!-- /.forms-lst-name -->  
-            <div class="forms-department">
-                <label class="label" for="department">Department</label>
+                <input type="text" name="last-name" id="last-name">
+            <div class="forms-department padding-top">
+                <label for="department">Department</label>
+            </div>
+            <!-- /.forms-department -->
                 <form action="department">
                     <select name="department" id="department" class="department">
                         <option value="high">High</option>
@@ -88,41 +94,39 @@
                         <option value="low">Low</option>
                     </select>
                 </form>
-            </div>
-            <!-- /.forms-department -->
         </div>
         <!-- /.forms-scnd-block  -->
                 
         <div class="forms-third-block d-flex">
             <div class="company-name">
-                <label class="label" for="comp-name">Company name</label>
-                <input type="text" name="comp-name" id="comp-name">
+                <label for="comp-name">Company name</label>
             </div>
             <!-- /.company-name -->
+                <input type="text" name="comp-name" id="comp-name">
 
             <div class="forms-job-level">
-                <label class="label" for="job-level">Job Title Level</label>
+                <label for="job-level">Job Title Level</label>
+            </div>
+            <!-- /.forms-job-level -->
                 <form action="job-level">
-                    <select name="job-level" id="job-level" class="job-level">
+                    <select name="job-level" id="job-level">
                         <option value="one">1</option>
                         <option value="two">2</option>
                         <option value="three">3</option>
                     </select>
                 </form>
-            </div>
-            <!-- /.forms-job-level -->
         
             <div class="forms-country">
-                <label class="label" for="country">Country</label>
+                <label for="country">Country</label>
+            </div>
+            <!-- /.forms-country -->
                 <form action="country" id="form-country">
-                    <select name="country" id="country" class="country">
+                    <select name="country" id="country">
                         <option value="ua">Ukraine</option>
                         <option value="usa">USA</option>
                         <option value="pl">Poland</option>
                     </select>
                 </form>
-            </div>
-            <!-- /.forms-country -->
         </div>
         <!-- /forms-third-block -->
 
